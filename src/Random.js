@@ -1,5 +1,6 @@
 import axios from 'axios'
 import {useState, useEffect} from 'react'
+import { TwitterShareButton } from 'react-share';
 import './Random.css'
 
 function Random() {
