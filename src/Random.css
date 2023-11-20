@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Satisfy&display=swap');
+
+body {
+    background: url('https://img.freepik.com/free-vector/green-stylish-glitch-background_1409-1674.jpg?w=826&t=st=1670602030~exp=1670602630~hmac=792e09a55764e9ffae3275a455805acbbbb9a674f769771b70e4c340f32ad2f8');
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.buttons {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.material-icons {
+    font-size: 50px !important;
+    cursor: pointer;
+}
+
+.thebuttons {
+    position: relative;
+    left: 37%;
+    top: 35%;
+    z-index: -1;
+    display: flex;
+    gap: 15%;
+}
+
+.share {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.share:hover {
+    height: 90px;
+}
+
+.section {
+    display: flex;
+    gap: 10px;
+}
+
+.math, .trivia, .date {
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.randanFactan {
+    text-align: center;
+    margin-top: 1% !important;
+    color: #6adaa9;
+    font-weight: 500;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.theTitle {
+    position: relative;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.numberToFact {
+    border-radius: 4px !important;
+    border: 2px solid #04A65F !important;
+    height: 3rem;
+    margin-left: 25%;
+    background-color: #04A65F !important;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.numberToFact::placeholder { 
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .theTitle {
+        margin-top: -8%;
+    }
+}
+
+.footer {
+    position: absolute;
+    margin-bottom: 0%;
+    color: black;
+    font-size: 20px;
+    bottom: 0;
+    left: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    overflow: hidden;
+}
+
+.linkerApi {
+    text-decoration: none;
+    color: white;
+}
+
+.linkerApi:hover {
+    color: black
+}
+
+.refresh {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100%;
+    font-weight: 1000;
+}
+
+.previous, .next {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+.three {
+    padding: 8px 15px;
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .material-icons {
+        font-size: 20px !important;
+        cursor: pointer;
+    }
+}
