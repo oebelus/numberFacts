@@ -18,6 +18,8 @@ function Random() {
     axios.get(url)
     .then(response => {
       setAdvice(response.data)
+    }).catch(err => {
+      setId(null)
     })
   }, [url])
 
@@ -45,13 +47,18 @@ function Random() {
     setTopic("date")
   }
 
+  function changeInput(e) {
+    setId(e.target.value)
+    console.log(id)
+  }
+
   return (
     <div className="row">
       <div className="col s12 m6">
         <h1 className='theTitle'>Numbers' facts generator</h1>
           <div className="card black darken-1">
             <div className="card-content white-text">
-              <input type="text" name="numberToFact" value={id == null ? 23 : id} className='numberToFact'></input>
+              <input type="text" name="numberToFact" onChange={changeInput} value={null?23:id} className='numberToFact'/>
               <p className='randanFactan'>{slip}</p>
             </div>
             <div className="card-action buttons">
